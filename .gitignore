@@ -1,0 +1,45 @@
+# Python cache files
+*.pyc
+__pycache__/
+
+# Virtual Environment
+venv/
+env/
+ENV/
+
+# YOLO Model Files
+*.pt
+
+# AI Model Directory
+models/
+
+# YOLO Runs and Outputs
+runs/
+outputs/
+
+# Logs
+logs/
+*.log
+
+# Detection History / Generated Files
+detection_history.csv
+
+# Temporary Files
+*.tmp
+*.temp
+
+# Environment Files
+.env
+
+# Jupyter Notebook Files
+.ipynb_checkpoints/
+
+# IDE / Editor Settings
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS Generated Files
+.DS_Store
+Thumbs.db
