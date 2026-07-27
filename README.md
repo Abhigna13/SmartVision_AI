@@ -113,7 +113,7 @@ SmartVision_AI
 
 ### 📷 Image Detection
 
-![Image Detection](https://github.com/Abhigna13/SmartVision_AI/blob/main/screenshots/face_detection.png)
+![Image Detection](https://github.com/Abhigna13/SmartVision_AI/blob/main/screenshots/detection_result.png)
 
 ---
 
