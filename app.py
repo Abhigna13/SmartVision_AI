@@ -19,13 +19,13 @@ st.markdown(
     }
     [data-testid="stAppViewContainer"] {
         background:
-            radial-gradient(circle at top left, rgba(87, 255, 173, 0.16), transparent 28%),
-            radial-gradient(circle at top right, rgba(7, 100, 57, 0.25), transparent 20%),
-            linear-gradient(135deg, #040706 0%, #09120e 45%, #020403 100%);
+            radial-gradient(circle at top left, rgba(168, 85, 247, 0.18), transparent 30%),
+            radial-gradient(circle at top right, rgba(236, 72, 153, 0.18), transparent 25%),
+            linear-gradient(135deg, #12071F 0%, #131038 45%, #09020F 100%);
     }
     [data-testid="stSidebar"] {
-        background: linear-gradient(180deg, rgba(6, 13, 10, 0.98), rgba(4, 10, 8, 0.96));
-        border-right: 1px solid rgba(111, 255, 178, 0.15);
+        background: linear-gradient(180deg, rgba(28, 11, 50, 0.98), rgba(15, 6, 28, 0.96));
+        border-right: 1px solid rgba(56, 189, 248, 0.15);
     }
     .block-container {
         padding-top: 2.8rem;
@@ -33,8 +33,8 @@ st.markdown(
         max-width: 1500px;
     }
     .hero-panel, .panel-card, .metric-card, .status-card {
-        background: linear-gradient(135deg, rgba(8, 17, 13, 0.95), rgba(11, 24, 18, 0.92));
-        border: 1px solid rgba(111, 255, 178, 0.16);
+        background: linear-gradient(135deg, rgba(30, 12, 55, 0.95), rgba(48, 16, 73, 0.92));
+        border: 1px solid rgba(168, 85, 247, 0.16);
         border-radius: 26px;
         padding: 1.6rem 1.8rem;
         margin-bottom: 1.2rem;
@@ -47,7 +47,7 @@ st.markdown(
         content: "";
         position: absolute;
         inset: 0;
-        background: linear-gradient(120deg, rgba(111, 255, 178, 0.08), transparent 45%, rgba(0, 0, 0, 0));
+        background: linear-gradient(120deg, rgba(168, 85, 247, 0.08), transparent 45%, rgba(0, 0, 0, 0));
         pointer-events: none;
     }
     .hero-title {
@@ -60,16 +60,16 @@ st.markdown(
     .hero-subtitle {
         font-size: 1.08rem;
         max-width:750px;
-        color: #8fdeae;
+        color: #E9D5FF;
         line-height: 1.7;
     }
     .pill {
         display: inline-block;
         padding: 0.38rem 0.72rem;
         border-radius: 999px;
-        background: rgba(111, 255, 178, 0.10);
-        border: 1px solid rgba(111, 255, 178, 0.24);
-        color: #dff8e9;
+        background: rgba(168, 85, 247, 0.10);
+        border: 1px solid rgba(168, 85, 247, 0.24);
+        color: #E0F2FE;
         margin: 0.2rem 0.25rem 0.2rem 0;
         font-size: 0.9rem;
         font-weight: 600;
@@ -80,8 +80,8 @@ st.markdown(
         gap: 8px;
         padding: 0.35rem 0.7rem;
         border-radius: 999px;
-        background: rgba(111, 255, 178, 0.10);
-        color: #98f7b6;
+        background: rgba(168, 85, 247, 0.10);
+        color: #C084FC;
         font-size: 0.82rem;
         font-weight: 700;
         letter-spacing: 0.12em;
@@ -91,22 +91,22 @@ st.markdown(
     .nav-card {
         padding: 0.9rem;
         border-radius: 16px;
-        border: 1px solid rgba(111, 255, 178, 0.14);
-        background: rgba(111, 255, 178, 0.05);
+        border: 1px solid rgba(168, 85, 247, 0.14);
+        background: rgba(168, 85, 247, 0.05);
         margin-bottom: 0.8rem;
     }
     .stButton > button, .stDownloadButton > button {
-        background: linear-gradient(135deg, #2f8f5a 0%, #56c781 100%);
+        background: linear-gradient(135deg, #9333EA 0%, #EC4899 100%);
         color: #041109;
         border: none;
         border-radius: 999px;
         font-weight: 700;
         padding: 0.55rem 1rem;
-        box-shadow: 0 10px 20px rgba(87, 255, 173, 0.18);
+        box-shadow: 0 10px 20px rgba(147, 51, 234, 0.18);
     }
     .stButton > button:hover, .stDownloadButton > button:hover {
         transform: translateY(-1px);
-        box-shadow: 0 12px 24px rgba(87, 255, 173, 0.24);
+        box-shadow: 0 12px 24px rgba(147, 51, 234, 0.24);
     }
     .stAlert, .stInfo, .stSuccess, .stError {
         border-radius: 16px;
@@ -150,7 +150,7 @@ def render_glass_card(title, content, icon="✨"):
                 <span style="font-size:1.16rem;">{icon}</span>
                 <h4 style="margin:0; color:#f7fff8;">{title}</h4>
             </div>
-            <div style="color:#8fdeae; line-height:1.65;">{content}</div>
+            <div style="color:#E9D5FF; line-height:1.65;">{content}</div>
         </div>
         """,
         unsafe_allow_html=True,
@@ -190,7 +190,7 @@ def render_home_page():
     with side_col:
         render_glass_card(
             "System Highlights",
-            "<ul style='margin:0; padding-left:1rem; color:#8fdeae;'><li>Instant image analysis</li><li>Live webcam detection</li><li>Performance insights and reports</li></ul>",
+            "<ul style='margin:0; padding-left:1rem; color:#E9D5FF;'><li>Instant image analysis</li><li>Live webcam detection</li><li>Performance insights and reports</li></ul>",
             icon="🛰️",
         )
 
@@ -257,12 +257,12 @@ def render_image_detection_page(model):
                         <div class="panel-card" style="margin-top:0.7rem;">
                             <div style="display:flex; justify-content:space-between; align-items:center;">
                                 <strong style="color:#f7fff8;">{name}</strong>
-                                <span style="color:#98f7b6;">{conf_value:.1f}% confidence</span>
+                                <span style="color:#C084FC;">{conf_value:.1f}% confidence</span>
                             </div>
                             <div style="margin-top:0.6rem; height:8px; border-radius:999px; overflow:hidden; background:rgba(255,255,255,0.10);">
-                                <div style="height:100%; width:{conf_value:.1f}%; background:linear-gradient(90deg, #3bc775, #8ff5b8);"></div>
+                                <div style="height:100%; width:{conf_value:.1f}%; background:linear-gradient(90deg, #9333EA, #EC4899);"></div>
                             </div>
-                            <div style="margin-top:0.45rem; color:#8fdeae;">Detected {count} object(s)</div>
+                            <div style="margin-top:0.45rem; color:#E9D5FF;">Detected {count} object(s)</div>
                         </div>
                         """,
                         unsafe_allow_html=True,
@@ -379,7 +379,7 @@ def main():
             """
             <div class="nav-card">
                 <h2 style='color:white;margin:0 0 0.2rem 0;'>🧠 SmartVision AI</h2>
-                <p style='color:#8fdeae;font-size:15px;margin:0;'>AI Vision Intelligence Platform</p>
+                <p style='color:#7DD3FC;font-size:15px;margin:0;'>AI Vision Intelligence Platform</p>
             </div>
             """,
             unsafe_allow_html=True,
@@ -410,8 +410,8 @@ def main():
         margin-top:2rem;
         text-align:center;
         padding:1rem;
-        color:#7bc697;
-        border-top:1px solid rgba(111,255,178,0.16);'>
+        color:#C084FC;
+        border-top:1px solid rgba(168, 85, 247, 0.16);'>
         🚀 SmartVision AI | AI Object Detection Platform
         </div>
         """,
